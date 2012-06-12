@@ -1,0 +1,16 @@
+/home/yury/work/modules/pio/pio.c
+/home/yury/work/modules/pio/#pio.c#
+/home/yury/work/modules/pio/linux-2.6.28-sk/arch/arm/mach-at91/gpio.c
+/home/yury/work/modules/pio/linux-2.6.28-sk/arch/arm/mach-at91/#gpio.c#
+/home/yury/work/modules/pio/init.sh
+/home/yury/work/modules/pio/#init.sh#
+/home/yury/kernel/linux-2.6.28-sk/arch/arm/mach-at91/include/mach/gpio.h
+/home/yury/kernel/linux-2.6.28-sk/arch/arm/mach-at91/include/mach/#gpio.h#
+/home/yury/work/modules/pio/cleanup.sh
+/home/yury/work/modules/pio/#cleanup.sh#
+/home/yury/work/modules/piopins/piopins.c
+/home/yury/work/modules/piopins/#piopins.c#
+/home/yury/kernel/linux-2.6.28-sk/kernel/panic.c
+/home/yury/kernel/linux-2.6.28-sk/kernel/#panic.c#
+/home/yury/kernel/linux-2.6.28-sk/include/asm-generic/bug.h
+/home/yury/kernel/linux-2.6.28-sk/include/asm-generic/#bug.h#

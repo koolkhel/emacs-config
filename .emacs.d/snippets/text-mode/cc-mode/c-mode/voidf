@@ -1,0 +1,11 @@
+#name: void fun
+# --
+void ${1:funname}(${2:int a})
+{
+	TRACE_ENTRY();
+
+	$0
+
+	TRACE_EXIT();
+	return;
+}

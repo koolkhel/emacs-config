@@ -1,0 +1,3 @@
+list_for_each_entry_safe(${entry}, ${tmp}, &${list_head}, ${next_entry}) {
+	$0
+}

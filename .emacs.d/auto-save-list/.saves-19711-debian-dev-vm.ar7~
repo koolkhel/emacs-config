@@ -1,0 +1,12 @@
+/home/yury/work/modules/piopins/piopins.c
+/home/yury/work/modules/piopins/#piopins.c#
+/home/yury/work/modules/adc-example/linux-2.6.28-sk/arch/arm/mach-at91/gpio.c
+/home/yury/work/modules/adc-example/linux-2.6.28-sk/arch/arm/mach-at91/#gpio.c#
+/home/yury/kernel/linux-2.6.28-sk/kernel/spinlock.c
+/home/yury/kernel/linux-2.6.28-sk/kernel/#spinlock.c#
+/home/yury/work/modules/piopins/linux-2.6.28-sk/include/linux/spinlock.h
+/home/yury/work/modules/piopins/linux-2.6.28-sk/include/linux/#spinlock.h#
+/home/yury/work/modules/adc-example/driver.c
+/home/yury/work/modules/adc-example/#driver.c#
+/home/yury/work/modules/piopins/linux-2.6.28-sk/kernel/irq/manage.c
+/home/yury/work/modules/piopins/linux-2.6.28-sk/kernel/irq/#manage.c#

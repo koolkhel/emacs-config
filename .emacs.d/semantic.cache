@@ -1,0 +1,15 @@
+;; Object .emacs.d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".emacs.d/"
+  :tables (list 
+   (semanticdb-table "keys.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("global-set-key" code nil nil [135 178]) ("global-set-key" code nil nil [200 249]) ("global-set-key" code nil nil [264 308]) ("global-set-key" code nil nil [309 355]) ("global-set-key" code nil nil [416 471]) ("global-set-key" code nil nil [472 528]) ("global-set-key" code nil nil [530 568]) ("global-set-key" code nil nil [569 607]) ("global-set-key" code nil nil [655 697]) ("global-set-key" code nil nil [699 740]) ("global-set-key" code nil nil [741 780]) ("global-set-key" code nil nil [781 827]) ("global-set-key" code nil nil [828 874]) ("global-set-key" code nil nil [876 909]) ("global-set-key" code nil nil [941 976]) ("global-set-key" code nil nil [977 1019]) ("global-set-key" code nil nil [1022 1061]) ("global-set-key" code nil nil [1062 1105]) ("global-set-key" code nil nil [1126 1158]) ("global-set-key" code nil nil [1160 1246]) ("global-set-key" code nil nil [1260 1290]) ("global-set-key" code nil nil [1291 1323]) ("global-set-key" code nil nil [1324 1367]) ("global-set-key" code nil nil [1368 1413]) ("global-set-key" code nil nil [1441 1475]) ("global-set-key" code nil nil [1494 1523]) ("global-set-key" code nil nil [1547 1600]) ("global-set-key" code nil nil [1628 1673]) ("global-set-key" code nil nil [1674 1726]) ("global-set-key" code nil nil [1756 1808]) ("global-set-key" code nil nil [1809 1861]) ("define-key" code nil nil [1880 1927]) ("define-key" code nil nil [1928 1971]))
+    :file "keys.el"
+    :pointmax 1972
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre3"
+  :semanticdb-version "2.0pre3"
+  )
