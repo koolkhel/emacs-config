@@ -1,4 +1,4 @@
-;; Time-stamp: <2012-06-12 19:57:40 Yury Luneff .emacs>
+;; Time-stamp: <2012-07-02 14:43:17 Yury Luneff .emacs>
 ;(defvar xref-current-project "/home/yury/work/client-cpp") ;; текущее имя проекта xref
 
 ;(defvar xref-key-binding 'none)	  ;; can be also 'local or 'none
@@ -90,6 +90,9 @@
 ;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/speedbar")
 ;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/ede")
 
+(setq stack-trace-on-error (lambda ()
+			     t))
+
 (require 'notify)
 
 (require 'cedet)
@@ -125,6 +128,7 @@
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.html?$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.gdbinit?$" . gdb-script-mode))
 (setq auto-mode-alist (cons '("\\.h?$" . c++-mode) auto-mode-alist))
 
 ;; для нормальной прокрутки
