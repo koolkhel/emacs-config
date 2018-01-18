@@ -1,12 +1,13 @@
 ;; Time-stamp: <2012-07-02 14:43:17 Yury Luneff .emacs>
-;(defvar xref-current-project "/home/yury/work/client-cpp") ;; текущее имя проекта xref
 
-;(defvar xref-key-binding 'none)	  ;; can be also 'local or 'none
-;(setq load-path (cons "/home/yury/.emacs.d/xref/emacs" load-path))
-;(setq exec-path (cons "/home/yury/.emacs.d/xref" exec-path))
-;(require 'xrefactory)
 ;; end of Xrefactory configuration part ;;
-;(message "xrefactory loaded")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq warning-suppress-types nil)
 
 (custom-set-variables
@@ -85,24 +86,11 @@
 (setq load-path (cons "/usr/share/emacs/site-lisp/php-elisp" load-path))
 (setq load-path (cons "~/.emacs.d/ecb" load-path))
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
-;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/eieio")
-;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/common")
-;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/speedbar")
-;(add-to-list 'load-path "~/.emacs.d/cedet-1.0pre6/ede")
 
 (setq stack-trace-on-error (lambda ()
 			     t))
 
-(require 'notify)
-
-(require 'cedet)
-;(semantic-load-enable-minimum-features)
-(require 'ecb)
-;(semantic-load-enable-excessive-code-helpers)
-(require 'semantic/db)
-(global-semantic-stickyfunc-mode -1)
-
-(semantic-add-system-include "/usr/local/mylib/include")
+;; (require 'notify)
 
 (require 'bookmark+)
 
@@ -189,7 +177,7 @@
 (blink-cursor-mode nil)
 
 ; табы по дефолту в 4
-(setq tab-width 8)
+(setq tab-width 4)
 
 ;; нет файлам-бекапам )
 (setq make-backup-files nil)
@@ -238,10 +226,8 @@
 ;; отруб тулбара
 (tool-bar-mode 0)
 
-; старт сервера (чтобы запускать редактирование по emacsclient)
-;(server-start)
 ;; --------------------- /// ------------------------------------
-;(pc-selection-mode)			;обычная работа с shift-стрелки
+(pc-selection-mode)			;обычная работа с shift-стрелки
 
 (iswitchb-mode 1)               ; smart buffer switching
 ;; убираем ненужные буферы из списка возможных вариантов переключения
@@ -347,6 +333,11 @@
     (require 'gtags)
     (gtags-mode t)))
 
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+              (ggtags-mode 1))))
+
 ; (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 ;(require 'doxymacs)
@@ -368,12 +359,6 @@
 
 (load-file "~/.emacs.d/keys.el")		    ;настройки клавиш
 (require 'var-func)
-(load-file "/usr/local/share/emacs/24.1/lisp/cedet/cedet.el")
-(load-file "/usr/local/share/emacs/24.1/lisp/cedet/semantic.el")
-
-(require 'ede)
-
-(global-ede-mode t)				    ;сплошной ede вообще
 
 (put 'scroll-left 'disabled nil)		    ;не боимся скроллить влево-вправо
 
